@@ -1,0 +1,28 @@
+# Dokumentationsvorlage, kein Deployment. Private Kopie: private/environment.yaml
+proxmox:
+  version: REPLACE_VERSION
+  node: REPLACE_NODE
+  storage: REPLACE_STORAGE
+  bridge: REPLACE_BRIDGE
+network:
+  subnet: REPLACE_CIDR
+  gateway: REPLACE_GATEWAY
+  dns: REPLACE_DNS
+vms:
+  management: {id: REPLACE_ID, hostname: REPLACE_HOSTNAME, address: REPLACE_ADDRESS}
+  airflow: {id: REPLACE_ID, hostname: REPLACE_HOSTNAME, address: REPLACE_ADDRESS}
+  spark_master: {id: REPLACE_ID, hostname: REPLACE_HOSTNAME, address: REPLACE_ADDRESS}
+  spark_worker: {id: REPLACE_ID, hostname: REPLACE_HOSTNAME, address: REPLACE_ADDRESS}
+  postgres: {id: REPLACE_ID, hostname: REPLACE_HOSTNAME, address: REPLACE_ADDRESS}
+versions:
+  ubuntu: REPLACE_VERSION
+  postgres: REPLACE_VERSION
+  airflow: REPLACE_VERSION
+  python: REPLACE_VERSION
+  spark: REPLACE_VERSION
+  java: REPLACE_VERSION
+services:
+  airflow_executor: REPLACE_EXECUTOR
+  airflow_database: REPLACE_DATABASE
+  airflow_database_role: REPLACE_ROLE
+  credentials_reference: REPLACE_PASSWORD_MANAGER_REFERENCE
